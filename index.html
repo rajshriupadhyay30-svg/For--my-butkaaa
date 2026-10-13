@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Butka ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="#home" class="logo">For My Butka ♡</a>
+
+        <nav>
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('letter')">My Letter</button>
+            <button onclick="showPage('hard-days')">For You</button>
+            <button onclick="showPage('memories')">Memories</button>
+            <button onclick="showPage('reasons')">Why You</button>
+            <button onclick="showPage('miss-me')">Miss Me</button>
+            <button onclick="showPage('wishes')">My Wishes</button>
+            <button onclick="showPage('ending')">One Last Thing</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PAGE 1: HOME -->
+        <section id="home" class="page active">
+            <p class="small-title">A LITTLE PLACE MADE WITH LOVE</p>
+
+            <h1> Butka ❤️</h1>
+
+            <h2>Pagal Insaan</h2>
+
+            <p>
+                Baby, I know tum bahut pareshan ho,
+                par don't worry, I'm always with you.
+            </p>
+
+            <p>
+                Hum kuch kar toh nahi sakte,
+                par aisa mat sochna kabhi ki tum akele ho.
+            </p>
+
+            <p>
+                Ye lo, try kiye hain tumhare liye.
+                I hope tumhe achha lage. 🥹❤️
+            </p>
+
+            <button onclick="showPage('letter')">
+                There's more I want to tell you 💌
+            </button>
+        </section>
+
+        <!-- PAGE 2: MY LETTER -->
+        <section id="letter" class="page">
+            <h1>Things I Can't Always Say</h1>
+
+            <p>
+                Baby kese ho sach batao i know tum pareshan ho,
+                hum tumko ye mehsus karane ke liye nhi kiye ye ki humse bol lo
+                hum chahte h tum dukhi mt ho khush raho 
+            </p>
+
+            <p>
+                hum chahte h tum humse jhuth mt bolo ki thik hu sach batao,
+                hum tumko judge thodi n karenge ji i love you mera baccha.
+            </p>
+
+            <p>
+                hum bs tumhare liye safe place banna chahte h jaha tumhe 
+                apni feelings batane me sochna n pade.
+                tum mere liye bahut special ho ji.
+            </p>
+
+            <p>Love, tumhari progress devloper♡</p>
+
+            <button onclick="showPage('hard-days')">Next ♡</button>
+        </section>
+
+        <!-- PAGE 3: HARD DAYS -->
+        <section id="hard-days" class="page">
+            <h1>For Your Hard Days 🌙</h1>
+
+            <p>
+                Baby, har problem ka solution ek hi din mein
+                nikalna zaroori nahi hai.
+            </p>
+
+            <p>
+                Thoda rest kar lena. Apna khayal rakhna.
+                Tumhe har waqt okay hone ka pretend nahi karna.
+            </p>
+
+            <button onclick="showComfort()">
+                Open your little reminder 💗
+            </button>
+
+            <p id="comfort-message" class="hidden">
+                please baby apna dhyan rakho I'm here for you 🥺
+                sorry kuch kuch ye gpt bhi likh de rhi but hum try kr rhe khud krne ka
+            </p>
+
+            <button onclick="showPage('memories')">Next ♡</button>
+        </section>
+
+        <!-- PAGE 4: MEMORIES -->
+        <section id="memories" class="page">
+            <h1>Our Little World 📷</h1>
+
+            <p>
+                yarrrr ye memory page hum nhi dale wo dali h sorry 🥲
+                don't mind n sorry babu 
+            </p>
+
+            <div class="memory-box">
+                <h2>Our favourite memory</h2>
+                <p> special memories to bahut h kya kya likhe sbse best memory jb tum hume mile 🥹</p>
+            </div>
+
+            <div class="memory-box">
+                <h2>Our inside joke</h2>
+                <p>yarrr ye page me kya kre hum😭 humko nhi aata </p>
+            </div>
+
+            <p> photo kese daleee 😭♡</p>
+
+            <button onclick="showPage('reasons')">Next ♡</button>
+        </section>
+
+        <!-- PAGE 5: REASONS -->
+        <section id="reasons" class="page">
+            <h1>Little Things I Love About You ❤️</h1>
+
+            <p>01. Tumhari khushi</p>
+            <p>02. Tumhari pyar </p>
+            <p>03. Tumse apne pure din ki bat batana .</p>
+            <p>04. Tumhara meri life mein hona.🥹</p>
+
+            <p>
+                kya likhe samajh nhi aara bahut sari feelings h
+                i love you yarrrrrr 😭❣️✨
+            </p>
+
+            <button onclick="showPage('miss-me')">Next ♡</button>
+        </section>
+
+        <!-- PAGE 6: MISS ME -->
+        <section id="miss-me" class="page">
+            <h1>Open When You Miss Me 💌</h1>
+
+            <p>
+                Agar kabhi meri yaad aaye,
+                toh ye chhota sa message kholna.
+            </p>
+
+            <button onclick="showSecret()">
+                Open my secret message ♡
+            </button>
+
+            <p id="secret-message" class="hidden">
+                babyy ,I miss you too.
+                hum humesha h n tumhare sath don't warry mera baccha sb thik ho jayega.
+                uuummmaahh uuummmaahh uuuuuuuuuuuuummmmmmaaaahhhhhh 😘 
+            </p>
+
+            <button onclick="showPage('wishes')">Next ♡</button>
+        </section>
+
+        <!-- PAGE 7: WISHES -->
+        <section id="wishes" class="page">
+            <h1>My Wishes For You ✨</h1>
+
+            <p>
+                i hope ki tum humesha khush rho .
+            </p>
+
+            <p>
+                jb bhi tumhe meri jarurat ho hum tunhare sath ho.
+                msg krna hume dekhne ke baad 
+            </p>
+
+            <p>
+                I hope tum humesha mere sath raho.
+                jb bhi samay ho bol lena 
+            </p>
+
+            <p>
+                And I hope you take care of yourself, baby. ♡
+            </p>
+
+            <button onclick="showPage('ending')">One last page →</button>
+        </section>
+
+        <!-- PAGE 8: ENDING -->
+        <section id="ending" class="page">
+            <h1>One Last Thing, Butka ❤️</h1>
+
+            <p>
+                yarrr tunhari bahut yaad aati h 😭
+                bahut chinta hoti h kaha ho kese ho.
+            </p>
+
+            <p>
+                yarrr tum bahut acchi website banate ho hum to uski barabri nhi kr skte 
+                bahut acchi to nhi h pr koshish kiye.
+                kya tumhe pasand aai ?
+            </p>
+
+            <p>
+                yarr tum bna lete ho but hum chahte jo tumhe pasand h wo kre tumhare liye 
+                koshish kr rhe pati web developer h to bibi ko bhi to aani chahiye n .👉🏻👈🏻🥺
+            </p>
+
+            <h2>apna dhyan rakhna♡</h2>
+
+            <p>Made with love, tumhari butki💗</p>
+
+            <button onclick="showPage('home')">
+                Read it again ↺
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        A little piece of my heart, just for you. ♡
+    </footer>
+
+</body>
+</html>
